@@ -1,8 +1,14 @@
 #!/usr/bin/python3
 def safe_print_integer(value):
+    """Print an integer wwith "{:d}".format ()
+    Argv:
+        value (int): the interger to print
+
+    Return:
+        if a TypeError or ValueError occurs - false-
+        otherwise - true.
+    """
     try:
-        if value == int:
-print("{:d}".format(int(value)))
+        print("{:d}".format(value))
     except (ValueError, TypeError):
-        else
-        print("Error: Not a valid interger")
+        return (false)
